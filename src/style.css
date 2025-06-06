@@ -66,7 +66,7 @@ main {
   color: #272044;
 }
 .grid img {
-  max-width: 100%;
+  width: 100%;
 }
 section h2 {
   font-weight: 700;
@@ -124,8 +124,15 @@ main h5 {
 .card_main {
   padding: 20px 30px;
 }
+
+.card_header.grid {
+  grid-gap: 0;
+}
+.card_header img {
+  aspect-ratio: 1/1;
+}
 .embed {
-  width: 100 %;
+  width: 100%;
   aspect-ratio: 1/1;
 }
 .btn {
@@ -201,5 +208,11 @@ footer a {
   }
   section {
     padding: 30px;
+  }
+  .card_header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
